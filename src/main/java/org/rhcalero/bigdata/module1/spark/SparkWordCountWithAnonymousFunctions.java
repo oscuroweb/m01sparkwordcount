@@ -83,7 +83,7 @@ public class SparkWordCountWithAnonymousFunctions {
         });
         log.debug("[DEBUG] STEP 5: Get words from Java RDD lines");
 
-        // STEP 5: Get a Java Pair RDD where key is a word and value is 1
+        // STEP 6: Get a Java Pair RDD where key is a word and value is 1
         JavaPairRDD<String, Integer> wordPair = words.mapToPair(new PairFunction<String, String, Integer>() {
             /** Generated serial version */
             private static final long serialVersionUID = -744560274505893811L;
